@@ -229,3 +229,6 @@ xcuserdata
 #**/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/osx,swift,linux,xcode,macos,carthage,fastlane,cocoapods,objective-c,visualstudiocode,swiftpackagemanager
+
+### Firebase ###
+*/GoogleService-Info.plist
