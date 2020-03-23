@@ -29,6 +29,7 @@
 		05E133B32428519600090A89 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E133A32428519600090A89 /* Protobuf.framework */; };
 		05E133B42428519600090A89 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E133A42428519600090A89 /* GoogleUtilities.framework */; };
 		05E133B52428519600090A89 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E133A52428519600090A89 /* GoogleDataTransport.framework */; };
+		05E133B72428568700090A89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05E133B62428568700090A89 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		05E133A32428519600090A89 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
 		05E133A42428519600090A89 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
 		05E133A52428519600090A89 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransport.framework; path = Carthage/Build/iOS/GoogleDataTransport.framework; sourceTree = "<group>"; };
+		05E133B62428568700090A89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		059D59842428460B0038B31C = {
 			isa = PBXGroup;
 			children = (
+				05E133B62428568700090A89 /* GoogleService-Info.plist */,
 				059D598F2428460B0038B31C /* SampleApplication-iOS */,
 				059D598E2428460B0038B31C /* Products */,
 				05E133952428519500090A89 /* Frameworks */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				059D599D2428460D0038B31C /* LaunchScreen.storyboard in Resources */,
+				05E133B72428568700090A89 /* GoogleService-Info.plist in Resources */,
 				059D599A2428460D0038B31C /* Preview Assets.xcassets in Resources */,
 				059D59972428460D0038B31C /* Assets.xcassets in Resources */,
 			);
