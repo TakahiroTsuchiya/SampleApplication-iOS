@@ -167,10 +167,10 @@ Dependencies/
 # https://github.com/johnno1962/injectionforxcode
 
 
-### SwiftPackageManager ###
-Packages
-xcuserdata
-*.xcodeproj
+#### SwiftPackageManager ###
+#Packages
+#xcuserdata
+#*.xcodeproj
 
 
 ### SwiftPM ###
