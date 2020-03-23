@@ -11,7 +11,7 @@ git clone https://github.com/TakahiroTsuchiya/SampleApplication-iOS.git
 
 cd SampleApplication-iOS
 
-carthage update
+carthage update --platform ios
 
 add ”GoogleService-Info.plist” to add project
 ```
