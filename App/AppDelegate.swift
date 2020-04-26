@@ -2,21 +2,19 @@
 //  AppDelegate.swift
 //  SampleApplication-iOS
 //
-//  Created by Takahiro Tsuchiya on 2020/03/07.
+//  Created by Takahiro Tsuchiya on 2020/04/25.
 //  Copyright © 2020 Takahiro Tsuchiya. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let gcmMessageIDKey = "gcm.message_id"
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
         return true
     }
 
@@ -34,17 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 
-        // Print message ID.
-        if let messageID = userInfo[gcmMessageIDKey] {
-          print("Message ID: \(messageID)")
-        }
-
-        // Print full message.
-        print(userInfo)
-
-        completionHandler(UIBackgroundFetchResult.newData)
-    }
 }
 

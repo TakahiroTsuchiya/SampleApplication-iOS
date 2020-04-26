@@ -1,0 +1,11 @@
+//
+// Config.Beta.xcconfig
+//  Xcode > Build Settings, read .xcconfig
+//
+// Created by Takahiro Tsuchiya on 2020/04/20.
+// Copyright (c) 2020 Takahiro Tsuchiya. All rights reserved.
+//
+
+#include "Config.Base.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(PRODUCT_BUNDLE_IDENTIFIER).beta
