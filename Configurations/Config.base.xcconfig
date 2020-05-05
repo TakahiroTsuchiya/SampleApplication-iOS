@@ -14,10 +14,10 @@ ENABLE_PREVIEWS = YES
 
 //:configuration = Common settings and Override
 DEVELOPMENT_ASSET_PATHS = 'App/Preview\ Content'
-// TARGETED_DEVICE_FAMILY
+TARGETED_DEVICE_FAMILY = 1 // 1 : iPhone, 2 : iPad
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
-INFOPLIST_FILE = App/Info.plist # TODO override
-PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleApplication-iOS # TODO
+INFOPLIST_FILE = App/Info.plist // TODO override
+PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleApplication-iOS // TODO
 PRODUCT_NAME = $(TARGET_NAME)
 FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS
 CODE_SIGN_STYLE = Automatic
