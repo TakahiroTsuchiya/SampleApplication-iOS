@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SampleApplication-iOS
 //
-//  Created by Takahiro Tsuchiya on 2020/03/07.
+//  Created by Takahiro Tsuchiya on 2020/04/25.
 //  Copyright © 2020 Takahiro Tsuchiya. All rights reserved.
 //
 

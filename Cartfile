@@ -1,6 +1,8 @@
 ## Firebase
 # FirebaseAnalyticsBinary must always be included.
 
+# if you're using FirebaseMessaging, FirebasePerformance, FirebaserRemoteConfig, FirebaseABTesting, FirebaseInAppMessaging, or FirebaseML, FirebaseProtobufBinary must also be included.
+
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseABTestingBinary.json"
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAdMobBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
@@ -26,5 +28,6 @@ binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.j
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMLVisionObjectDetectionBinary.json"
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMLVisionTextModelBinary.json"
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebasePerformanceBinary.json"
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseProtobufBinary.json"
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseRemoteConfigBinary.json"
 # binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseStorageBinary.json"
