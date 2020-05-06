@@ -67,47 +67,47 @@ targets:
     dependencies:
       # Don't add Firebase.framework
       - carthage: FIRAnalyticsConnector
-        linkType: static
+        linkType: staticBinary
 #      - carthage: FirebaseABTesting
-#        linkType: static
+#        linkType: staticBinary
       - carthage: FirebaseAnalytics
-        linkType: static
+        linkType: staticBinary
 #      - carthage: FirebaseAuth
-#        linkType: static
+#        linkType: staticBinary
       - carthage: FirebaseCore
-        linkType: static
+        linkType: staticBinary
       - carthage: FirebaseCoreDiagnostics
-        linkType: static
+        linkType: staticBinary
 #      - carthage: FirebaseDynamicLinks
-#        linkType: static
+#        linkType: staticBinary
       - carthage: FirebaseInAppMessaging
-        linkType: static
+        linkType: staticBinary
 #      - carthage: FirebaseCrashlytics
-#        linkType: static
+#        linkType: staticBinary
       - carthage: FirebaseInstallations
-        linkType: static
+        linkType: staticBinary
       - carthage: FirebaseInstanceID
-        linkType: static
+        linkType: staticBinary
       - carthage: FirebaseMessaging
-        linkType: static
+        linkType: staticBinary
 #      - carthage: FirebasePerformance
-#        linkType: static
+#        linkType: staticBinary
 #      - carthage: FirebaseRemoteConfig
-#        linkType: static
+#        linkType: staticBinary
       - carthage: GoogleAppMeasurement
-        linkType: static
+        linkType: staticBinary
       - carthage: GoogleDataTransport
-        linkType: static
+        linkType: staticBinary
       - carthage: GoogleDataTransportCCTSupport
-        linkType: static
+        linkType: staticBinary
       - carthage: GoogleUtilities
-        linkType: static
+        linkType: staticBinary
       - carthage: nanopb
-        linkType: static
+        linkType: staticBinary
       - carthage: PromisesObjC
-        linkType: static
+        linkType: staticBinary
       - carthage: Protobuf
-        linkType: static
+        linkType: staticBinary
       - sdk: StoreKit.framework
       - sdk: libc++.tbd
       - sdk: libsqlite3.tbd

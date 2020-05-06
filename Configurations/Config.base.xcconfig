@@ -19,9 +19,9 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
 INFOPLIST_FILE = App/Info.plist // TODO override
 PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleApplication-iOS // TODO
 PRODUCT_NAME = $(TARGET_NAME)
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS
 CODE_SIGN_STYLE = Automatic
 ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+DEVELOPMENT_TEAM = Automatic
 MARKETING_VERSION = 0.0.01
 // SWIFT_VERSION = 5.2 // project.yml
 // CURRENT_PROJECT_VERSION // project.yml
