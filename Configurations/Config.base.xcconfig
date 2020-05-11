@@ -21,4 +21,4 @@ MARKETING_VERSION = 0.0.01
 ALWAYS_SEARCH_USER_PATHS = NO
 
 // add Firebase
-// OTHER_LDFLAGS = $(inherited) $(OTHER_LDFLAGS) -ObjC
+OTHER_LDFLAGS = $(inherited) $(OTHER_LDFLAGS) -ObjC
