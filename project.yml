@@ -35,7 +35,6 @@ settings:
     PRODUCT_DISPLAY_NAME: "$(PRODUCT_DISPLAY_NAME)"
     PRODUCT_BUNDLE_IDENTIFIER: com.sample.SampleApplication-iOS # TODO update your identifier
     ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-#    INFOPLIST_FILE: App/Info.plist
     CURRENT_PROJECT_VERSION: 0.0.01
 
 #settingGroups:
@@ -48,45 +47,42 @@ targets:
     sources:
       - path: App
         name: App
-#      - GoogleService-Info.plist # TODO using bitrise, step to create files
-#    dependencies:
-#      # Don't add Firebase.framework
-#      - carthage: FIRAnalyticsConnector
-#        linkType: staticBinary
-#      - carthage: FirebaseAnalytics
-#        linkType: staticBinary
-#      - carthage: FirebaseCore
-#        linkType: staticBinary
-#      - carthage: FirebaseCoreDiagnostics
-#        linkType: staticBinary
-#      - carthage: FirebaseInstallations
-#        linkType: staticBinary
-#      - carthage: FirebaseInstanceID
-#        linkType: staticBinary
-#      - carthage: GoogleAppMeasurement
-#        linkType: staticBinary
-#      - carthage: GoogleDataTransport
-#        linkType: staticBinary
-#      - carthage: GoogleDataTransportCCTSupport
-#        linkType: staticBinary
-#      - carthage: GoogleUtilities
-#        linkType: staticBinary
-#      - carthage: nanopb
-#        linkType: staticBinary
-#      - carthage: PromisesObjC
-#        linkType: staticBinary
-#      - carthage: Protobuf
-#        linkType: staticBinary
-#      - sdk: StoreKit.framework
-#      - sdk: libc++.tbd
-#      - sdk: libsqlite3.tbd
-#      - sdk: AdSupport.framework
+      - GoogleService-Info.plist # TODO using bitrise, step to create files script
+      - Configurations/Config.base.xcconfig # TODO config file include not add project
+    dependencies:
+      # Don't add Firebase.framework
+      - carthage: FIRAnalyticsConnector
+        linkType: staticBinary
+      - carthage: FirebaseAnalytics
+        linkType: staticBinary
+      - carthage: FirebaseCore
+        linkType: staticBinary
+      - carthage: FirebaseCoreDiagnostics
+        linkType: staticBinary
+      - carthage: FirebaseInstallations
+        linkType: staticBinary
+      - carthage: GoogleAppMeasurement
+        linkType: staticBinary
+      - carthage: GoogleDataTransport
+        linkType: staticBinary
+      - carthage: GoogleDataTransportCCTSupport
+        linkType: staticBinary
+      - carthage: GoogleUtilities
+        linkType: staticBinary
+      - carthage: nanopb
+        linkType: staticBinary
+      - carthage: PromisesObjC
+        linkType: staticBinary
+      - sdk: StoreKit.framework
+      - sdk: libc++.tbd
+      - sdk: libsqlite3.tbd
+      - sdk: AdSupport.framework
 
 #fileGroups:
 #  - README.md
 
 schemes:
-  SampleApplication-iOS Base: # TODO change your app's name
+  SampleApplication-iOS Debug: # TODO change your app's name
     build:
       targets:
         App: all
