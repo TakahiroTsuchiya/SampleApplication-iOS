@@ -22,13 +22,13 @@ attributes:
 # TODO move to environments.yml
 configs:
   Base: base
-  Beta: beta
   Debug: debug
+  Beta: beta
 
 configFiles:
   Base: Configurations/Config.base.xcconfig
-  Beta: Configurations/Config.beta.xcconfig
   Debug: Configurations/Config.debug.xcconfig
+  Beta: Configurations/Config.beta.xcconfig
 
 settings:
   base: # TODO move to xcconfig
@@ -87,53 +87,69 @@ targets:
 
 schemes:
   SampleApplication-iOS Beta: # TODO change your app's name
-    build:
-      targets:
-        App: all
+    templates:
+      - CommonSchemeTemplates
     run:
       config: Beta # TODO same configs
-      commandLineArguments:
-        -FIRDebugEnabled: YES
-        -FIRAnalyticsDebugEnabled: YES
-        -FIRAnalyticsVerboseLoggingEnabled: YES
     test:
       config: Beta
-      commandLineArguments:
-        -FIRDebugEnabled: YES
-        -FIRAnalyticsDebugEnabled: YES
-        -FIRAnalyticsVerboseLoggingEnabled: YES
-      gatherCoverageData: true
     profile:
       config: Beta
     analyze:
       config: Beta
     archive:
       config: Beta
-      revealArchiveInOrganizer: false
 
   SampleApplication-iOS Debug: # TODO change your app's name
+    templates:
+      - CommonSchemeTemplates
+    run:
+      config: Debug # TODO same configs
+    test:
+      config: Debug
+    profile:
+      config: Debug
+    analyze:
+      config: Debug
+    archive:
+      config: Debug
+
+schemeTemplates:
+  CommonSchemeTemplates:
     build:
       targets:
         App: all
     run:
-      config: Debug # TODO same configs
+      config: Base # TODO same configs
       commandLineArguments:
         -FIRDebugEnabled: YES
         -FIRAnalyticsDebugEnabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: YES
     test:
-      config: Debug
+      config: Base
       commandLineArguments:
         -FIRDebugEnabled: YES
         -FIRAnalyticsDebugEnabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: YES
       gatherCoverageData: true
     profile:
-      config: Debug
+      config: Base
+      commandLineArguments:
+        -FIRDebugEnabled: NO
+        -FIRAnalyticsDebugEnabled: NO
+        -FIRAnalyticsVerboseLoggingEnabled: NO
     analyze:
-      config: Debug
+      config: Base
+      commandLineArguments:
+        -FIRDebugEnabled: NO
+        -FIRAnalyticsDebugEnabled: NO
+        -FIRAnalyticsVerboseLoggingEnabled: NO
     archive:
-      config: Debug
+      config: Base
+      commandLineArguments:
+        -FIRDebugEnabled: NO
+        -FIRAnalyticsDebugEnabled: NO
+        -FIRAnalyticsVerboseLoggingEnabled: NO
       revealArchiveInOrganizer: false
 
 #targetTemplates:
