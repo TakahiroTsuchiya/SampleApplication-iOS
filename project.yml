@@ -24,11 +24,13 @@ configs:
   Base: base
   Debug: debug
   Beta: beta
+  Demo: demo
 
 configFiles:
   Base: Configurations/Config.base.xcconfig
   Debug: Configurations/Config.debug.xcconfig
   Beta: Configurations/Config.beta.xcconfig
+  Demo: Configurations/Config.demo.xcconfig
 
 settings:
   base: # TODO move to xcconfig
@@ -113,6 +115,20 @@ schemes:
       config: Debug
     archive:
       config: Debug
+
+  SampleApplication-iOS Demo: # TODO change your app's name
+    templates:
+      - CommonSchemeTemplates
+    run:
+      config: Demo # TODO same configs
+    test:
+      config: Demo
+    profile:
+      config: Demo
+    analyze:
+      config: Demo
+    archive:
+      config: Demo
 
 schemeTemplates:
   CommonSchemeTemplates:
