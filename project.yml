@@ -22,9 +22,13 @@ attributes:
 # TODO move to environments.yml
 configs:
   Base: base
+  Beta: beta
+  Debug: debug
 
 configFiles:
   Base: Configurations/Config.base.xcconfig
+  Beta: Configurations/Config.beta.xcconfig
+  Debug: Configurations/Config.debug.xcconfig
 
 settings:
   base: # TODO move to xcconfig
@@ -35,7 +39,7 @@ settings:
     PRODUCT_DISPLAY_NAME: "$(PRODUCT_DISPLAY_NAME)"
     PRODUCT_BUNDLE_IDENTIFIER: com.sample.SampleApplication-iOS # TODO update your identifier
     ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-    CURRENT_PROJECT_VERSION: 0.0.01
+    CURRENT_PROJECT_VERSION: 0.0.00
 
 #settingGroups:
 
@@ -82,29 +86,54 @@ targets:
 #  - README.md
 
 schemes:
-  SampleApplication-iOS Debug: # TODO change your app's name
+  SampleApplication-iOS Beta: # TODO change your app's name
     build:
       targets:
         App: all
     run:
-      config: Base # TODO same configs
+      config: Beta # TODO same configs
       commandLineArguments:
         -FIRDebugEnabled: YES
         -FIRAnalyticsDebugEnabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: YES
     test:
-      config: Base
+      config: Beta
       commandLineArguments:
         -FIRDebugEnabled: YES
         -FIRAnalyticsDebugEnabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: YES
       gatherCoverageData: true
     profile:
-      config: Base
+      config: Beta
     analyze:
-      config: Base
+      config: Beta
     archive:
-      config: Base
+      config: Beta
+      revealArchiveInOrganizer: false
+
+  SampleApplication-iOS Debug: # TODO change your app's name
+    build:
+      targets:
+        App: all
+    run:
+      config: Debug # TODO same configs
+      commandLineArguments:
+        -FIRDebugEnabled: YES
+        -FIRAnalyticsDebugEnabled: YES
+        -FIRAnalyticsVerboseLoggingEnabled: YES
+    test:
+      config: Debug
+      commandLineArguments:
+        -FIRDebugEnabled: YES
+        -FIRAnalyticsDebugEnabled: YES
+        -FIRAnalyticsVerboseLoggingEnabled: YES
+      gatherCoverageData: true
+    profile:
+      config: Debug
+    analyze:
+      config: Debug
+    archive:
+      config: Debug
       revealArchiveInOrganizer: false
 
 #targetTemplates:
