@@ -132,15 +132,28 @@ schemes:
 
 schemeTemplates:
   CommonSchemeTemplates:
+    templates:
+      - buildScheme
+      - runScheme
+      - testScheme
+      - profileScheme
+      - analyzeScheme
+      - archiveScheme
+
+  buildScheme:
     build:
       targets:
         App: all
+
+  runScheme:
     run:
       config: Base # TODO same configs
       commandLineArguments:
         -FIRDebugEnabled: YES
         -FIRAnalyticsDebugEnabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: YES
+
+  testScheme:
     test:
       config: Base
       commandLineArguments:
@@ -148,18 +161,24 @@ schemeTemplates:
         -FIRAnalyticsDebugEnabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: YES
       gatherCoverageData: true
+
+  profileScheme:
     profile:
       config: Base
       commandLineArguments:
         -FIRDebugEnabled: NO
         -FIRAnalyticsDebugEnabled: NO
         -FIRAnalyticsVerboseLoggingEnabled: NO
+
+  analyzeScheme:
     analyze:
       config: Base
       commandLineArguments:
         -FIRDebugEnabled: NO
         -FIRAnalyticsDebugEnabled: NO
         -FIRAnalyticsVerboseLoggingEnabled: NO
+
+  archiveScheme:
     archive:
       config: Base
       commandLineArguments:
