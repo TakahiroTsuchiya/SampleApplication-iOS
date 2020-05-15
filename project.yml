@@ -150,16 +150,22 @@ schemeTemplates:
       config: Base # TODO same configs
       commandLineArguments:
         -FIRDebugEnabled: YES
+        -FIRDebugDisabled: NO
         -FIRAnalyticsDebugEnabled: YES
+        -FIRAnalyticsDebugDisabled: NO
         -FIRAnalyticsVerboseLoggingEnabled: YES
+        -FIRAnalyticsVerboseLoggingDisabled: NO
 
   testScheme:
     test:
       config: Base
       commandLineArguments:
         -FIRDebugEnabled: YES
+        -FIRDebugDisabled: NO
         -FIRAnalyticsDebugEnabled: YES
+        -FIRAnalyticsDebugDisabled: NO
         -FIRAnalyticsVerboseLoggingEnabled: YES
+        -FIRAnalyticsVerboseLoggingDisabled: NO
       gatherCoverageData: true
 
   profileScheme:
@@ -167,24 +173,33 @@ schemeTemplates:
       config: Base
       commandLineArguments:
         -FIRDebugEnabled: NO
+        -FIRDebugDisabled: YES
         -FIRAnalyticsDebugEnabled: NO
+        -FIRAnalyticsDebugDisabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: NO
+        -FIRAnalyticsVerboseLoggingDisabled: YES
 
   analyzeScheme:
     analyze:
       config: Base
       commandLineArguments:
         -FIRDebugEnabled: NO
+        -FIRDebugDisabled: YES
         -FIRAnalyticsDebugEnabled: NO
+        -FIRAnalyticsDebugDisabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: NO
+        -FIRAnalyticsVerboseLoggingDisabled: YES
 
   archiveScheme:
     archive:
       config: Base
       commandLineArguments:
         -FIRDebugEnabled: NO
+        -FIRDebugDisabled: YES
         -FIRAnalyticsDebugEnabled: NO
+        -FIRAnalyticsDebugDisabled: YES
         -FIRAnalyticsVerboseLoggingEnabled: NO
+        -FIRAnalyticsVerboseLoggingDisabled: YES
       revealArchiveInOrganizer: false
 
 #targetTemplates:
