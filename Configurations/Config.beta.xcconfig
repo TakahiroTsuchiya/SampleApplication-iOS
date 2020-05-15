@@ -10,3 +10,7 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 #include "Config.base.xcconfig"
+
+VERSION_INFO_PREFIX = "BETA"
+
+PRODUCT_NAME = $(PRODUCT_NAME)-$(VERSION_INFO_PREFIX)
