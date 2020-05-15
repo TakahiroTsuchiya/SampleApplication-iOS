@@ -182,24 +182,10 @@ schemeTemplates:
   analyzeScheme:
     analyze:
       config: Base
-      commandLineArguments:
-        -FIRDebugEnabled: NO
-        -FIRDebugDisabled: YES
-        -FIRAnalyticsDebugEnabled: NO
-        -FIRAnalyticsDebugDisabled: YES
-        -FIRAnalyticsVerboseLoggingEnabled: NO
-        -FIRAnalyticsVerboseLoggingDisabled: YES
 
   archiveScheme:
     archive:
       config: Base
-      commandLineArguments:
-        -FIRDebugEnabled: NO
-        -FIRDebugDisabled: YES
-        -FIRAnalyticsDebugEnabled: NO
-        -FIRAnalyticsDebugDisabled: YES
-        -FIRAnalyticsVerboseLoggingEnabled: NO
-        -FIRAnalyticsVerboseLoggingDisabled: YES
       revealArchiveInOrganizer: false
 
 #targetTemplates:
