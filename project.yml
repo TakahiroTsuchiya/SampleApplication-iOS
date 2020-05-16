@@ -70,6 +70,10 @@ targets:
         linkType: staticBinary
       - carthage: FirebaseInstallations
         linkType: staticBinary
+      - carthage: FirebaseInstanceID
+        linkType: staticBinary
+      - carthage: FirebaseMessaging
+        linkType: staticBinary
       - carthage: GoogleAppMeasurement
         linkType: staticBinary
       - carthage: GoogleDataTransport
