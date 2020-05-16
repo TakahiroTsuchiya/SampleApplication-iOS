@@ -58,11 +58,15 @@ targets:
       # Don't add Firebase.framework
       - carthage: FIRAnalyticsConnector
         linkType: staticBinary
+      - carthage: FirebaseABTesting
+        linkType: staticBinary
       - carthage: FirebaseAnalytics
         linkType: staticBinary
       - carthage: FirebaseCore
         linkType: staticBinary
       - carthage: FirebaseCoreDiagnostics
+        linkType: staticBinary
+      - carthage: FirebaseInAppMessaging
         linkType: staticBinary
       - carthage: FirebaseInstallations
         linkType: staticBinary
@@ -77,6 +81,8 @@ targets:
       - carthage: nanopb
         linkType: staticBinary
       - carthage: PromisesObjC
+        linkType: staticBinary
+      - carthage: Protobuf
         linkType: staticBinary
       - sdk: StoreKit.framework
       - sdk: libc++.tbd
