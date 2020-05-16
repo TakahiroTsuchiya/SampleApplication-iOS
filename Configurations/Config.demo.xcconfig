@@ -1,8 +1,8 @@
 //
-//  Config.beta.xcconfig
+//  Config.demo.xcconfig
 //  App
 //
-//  Created by Takahiro Tsuchiya on 2020/05/13.
+//  Created by Takahiro Tsuchiya on 2020/05/14.
 //  Copyright © 2020 Takahiro Tsuchiya. All rights reserved.
 //
 
@@ -11,8 +11,8 @@
 
 #include "Config.base.xcconfig"
 
-VERSION_INFO_SUFFIX = Beta
-VERSION_INFO_PREFIX = BETA
+VERSION_INFO_SUFFIX = Demo
+VERSION_INFO_PREFIX = DEMO
 
 ASSETCATALOG_COMPILER_APPICON_NAME = $(VERSION_INFO_SUFFIX)AppIcon
 
