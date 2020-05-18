@@ -211,3 +211,7 @@ xcuserdata
 
 ### Firebase ###
 GoogleService-Info.plist
+
+### Firebase Crashlytics ###
+Scripts/Firebase/Crashlytics/upload-symbols
+Scripts/Firebase/Crashlytics/run
