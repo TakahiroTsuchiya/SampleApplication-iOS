@@ -66,6 +66,8 @@ targets:
         linkType: staticBinary
       - carthage: FirebaseCoreDiagnostics
         linkType: staticBinary
+      - carthage: FirebaseCrashlytics
+        linkType: staticBinary
       - carthage: FirebaseInAppMessaging
         linkType: staticBinary
       - carthage: FirebaseInstallations
