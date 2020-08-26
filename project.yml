@@ -35,7 +35,7 @@ configFiles:
 settings:
   base: # TODO move to xcconfig
     SWIFT_VERSION: 5.2  # TODO update 5.2
-    IPHONEOS_DEPLOYMENT_TARGET: 13.4  # TODO upadate 13.4.1
+    IPHONEOS_DEPLOYMENT_TARGET: 13.5  # TODO upadate 13.5.1
     CURRENT_PROJECT_VERSION: 0.0.00
 
 #settingGroups:
@@ -44,7 +44,7 @@ targets:
   App:
     type: application # or app-extension, bundle, framework
     platform: iOS # or tvOS, macOS, watchOS in array
-    deploymentTarget: 13.4 # TODO upadate 13.4
+    deploymentTarget: 13.5 # TODO upadate 13.4
     sources:
       - path: App
         name: App
